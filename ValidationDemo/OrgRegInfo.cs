@@ -30,6 +30,7 @@ namespace ValidationDemo
         /// 信用代码
         /// </summary>
         [Required(ErrorMessage = "请填写统一社会信用代码")]
+        [SocialCreditCode(ErrorMessage = "统一社会信用代码效验有误")]
         public string? orgid { get; set; }
         /// <summary>
         /// 企业名称
